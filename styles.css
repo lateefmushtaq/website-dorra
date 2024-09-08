@@ -717,3 +717,58 @@ body {
 .footer-content p {
     margin-bottom: 0px;
 }
+
+
+
+
+.section-label {
+    font-size: 12px;
+    margin-top: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ec4799;
+
+}
+
+.flag-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.flag-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.flag-section img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #ec4799;
+
+    transition: transform 0.3s ease-in-out;
+}
+
+.flag-section img:hover {
+    transform: scale(1.1);
+    border-color: #2a9d8f;
+    /* Hover effect with site’s theme color */
+}
+
+@media (max-width: 768px) {
+    .section-label {
+        font-size: 12px;
+        margin-top: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #ec4799;
+        text-align: center;
+
+    }
+
+}
