@@ -1,7 +1,6 @@
 function toggleMenu() {
     const nav = document.querySelector('.nav ul');
     const menuBtn = document.querySelector('.menu-btn');
-
     nav.classList.toggle('active');
     menuBtn.classList.toggle('active');
 }
@@ -30,20 +29,7 @@ function updateActiveLink() {
 
 
 
-var swiper = new Swiper(`[unique-script-id="w-w-dm-id"] .mySwiper`, {
-    slidesPerView: 1.5,
-    centeredSlides: true,
-    spaceBetween: 5,
-    pagination: {
-        el: `[unique-script-id="w-w-dm-id"] .swiper-pagination`,
-        clickable: true,
-    },
-    loop: true,
-    navigation: {
-        nextEl: `[unique-script-id="w-w-dm-id"] .swiper-button-nexts`,
-        prevEl: `[unique-script-id="w-w-dm-id"] .swiper-button-prevs`,
-    },
-});
+
 
 
 
@@ -56,5 +42,10 @@ function openModal(imageSrc) {
 
 function closeModal() {
     var modal = document.getElementById('imageModal');
-    modal.style.display = "none";  // Hide the modal
+    modal.style.display = "none";
 }
+document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape' || event.key === 'Esc') {
+        closeModal();
+    }
+});
