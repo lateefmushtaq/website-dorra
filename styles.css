@@ -243,12 +243,7 @@ h1 {
     margin-bottom: 40px;
 }
 
-.video-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    justify-items: center;
-}
+
 
 .image-grid {
     display: grid;
@@ -450,6 +445,9 @@ h1 {
 }
 
 @media (max-width: 768px) {
+
+
+
     .contact-info img {
         margin-right: 0px;
         width: 16px;
@@ -603,6 +601,40 @@ h1 {
 
 .photo-card:hover::after {
     opacity: 1;
+}
+
+
+@media (max-width: 768px) {
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+
+    }
+
+    .photo-card {
+        width: 180px;
+        height: 180px;
+
+    }
+}
+
+/* Extra small screens (up to 480px) - still 2 images per row, even smaller */
+@media (max-width: 480px) {
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .photo-card {
+        width: 140px;
+        height: 140px;
+    }
+
+    .photo-card::after {
+
+        padding: 2px;
+
+    }
 }
 
 * {
