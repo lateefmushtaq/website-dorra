@@ -49,3 +49,8 @@ document.addEventListener('keydown', function (event) {
         closeModal();
     }
 });
+
+let picture = document.getElementById('image-content')
+picture.addEventListener('click', function handleClick() {
+    picture.style.transform = 'rotate(-1.05deg)'
+})
