@@ -17,17 +17,9 @@
     margin: 0;
     font-weight: bold;
     color: #ec4799;
-
 }
 
-/* .text-content h2 {
-    font-size: 2.5em;
-    margin: 10px 0;
-    font-weight: bold;
-    color: #ee81b9;
 
-
-} */
 
 .contact-info {
     margin-top: 20px;
@@ -71,6 +63,7 @@
     justify-content: center;
     transform-style: preserve-3d;
     transition: transform 0.6s;
+    transform: rotate(1.5deg);
 }
 
 .image-content img {
@@ -83,6 +76,7 @@
     transform: scale(1.05);
     border-bottom: 2px solid rgb(13, 4, 4);
     border-left: 2px solid rgb(13, 4, 4);
+    transform: rotate(-1.05deg);
 
 
 }
@@ -107,26 +101,18 @@
     }
 
     .image-content {
-        margin-top: 20px;
+        margin-top: 12px;
     }
 
     .vertical-text {
-        right: auto;
-        left: 50%;
-        bottom: -30px;
-        top: auto;
-        transform: translateX(-50%) rotate(0);
+        display: none;
     }
 
-
-    .contact-info p {
-        font-size: 1.2em;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: center;
-        margin: 10px 0;
-        cursor: pointer;
+    .text-content h1 {
+        font-size: 24px;
+        margin: 0;
+        font-weight: bold;
+        color: #ec4799;
     }
 
     .nav {
@@ -466,22 +452,26 @@ h1 {
 @media (max-width: 768px) {
     .contact-info img {
         margin-right: 0px;
-        width: 32px;
-        height: 32px;
+        width: 16px;
+        height: 16px;
         cursor: pointer;
     }
 
+    .contact-info p {
+        font-size: 14px;
+    }
 
     .contact-info a {
-        font-size: 1.2em;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 10px 0;
-        cursor: pointer;
-        text-decoration: none;
-        color: #212529;
+        font-size: 14px;
     }
+
+    .contact-info {
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+    }
+
+
 
     .section-container {
         flex-direction: column;
@@ -522,14 +512,14 @@ h1 {
     #photography {
         display: flex;
         flex-direction: column;
-        justify-content: start;
+        justify-content: center;
         align-items: center;
-
     }
+
+
 
     #photography h1 {
         font-size: 2em;
-
     }
 
     #food {
@@ -542,7 +532,6 @@ h1 {
 
     #food h1 {
         font-size: 2em;
-
     }
 }
 
@@ -608,8 +597,8 @@ h1 {
     background: rgba(0, 0, 0, 0.6);
     color: #fff;
     text-align: center;
-    opacity: 0;
-    transition: opacity 0.3s;
+    opacity: 1;
+    transition: none
 }
 
 .photo-card:hover::after {
@@ -769,6 +758,10 @@ body {
         color: #ec4799;
         text-align: center;
 
+    }
+
+    .image-content img {
+        margin-bottom: 24px;
     }
 
 }
