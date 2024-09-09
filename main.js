@@ -47,3 +47,14 @@ var swiper = new Swiper(`[unique-script-id="w-w-dm-id"] .mySwiper`, {
 
 
 
+function openModal(imageSrc) {
+    var modal = document.getElementById('imageModal');
+    var modalImg = document.getElementById("fullImage");
+    modal.style.display = "flex";  // Show the modal
+    modalImg.src = imageSrc;  // Set the image source
+}
+
+function closeModal() {
+    var modal = document.getElementById('imageModal');
+    modal.style.display = "none";  // Hide the modal
+}

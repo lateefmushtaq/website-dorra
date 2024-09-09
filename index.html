@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>KONTAR DORI</title>
+        <title>DORI - Personal Webpage</title>
         <link
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
             rel="stylesheet" />
@@ -14,6 +14,8 @@
             href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
             rel="stylesheet" />
         <link rel="stylesheet" href="styles.css" />
+        <link rel="icon" href="./favicon.png" type="image/x-icon">
+
     </head>
 
     <body>
@@ -29,23 +31,20 @@
         <div class="ugc-container">
             <div class="text-content">
                 <h1>CONTENT CREATOR</h1>
-
                 <div class="contact-info">
-                    <p><img
-                            src="./assets/icons/icons8-email-96.png"
+                    <p><img src="./assets/icons/icons8-email-96.png"
                             alt="Email Icon"> dori.kontar92@gmail.com</p>
-                    <p> <a href="https://www.instagram.com/dorikontar"> <img
+                    <p><a href="https://www.instagram.com/dorikontar"><img
                                 src="./assets/icons/icons8-instagram-96.png"
-                                alt="instagram Icon">
-                            dorikontar</a></p>
-                    <p> <a href="https://www.tiktok.com/@dorikontar"> <img
+                                alt="instagram Icon"> @dorikontar</a></p>
+                    <p><a href="https://www.tiktok.com/@dorikontar"><img
                                 src="./assets/icons/icons8-tiktok-100.png"
-                                alt=" TikTok Icon"> @dorikontar</a></p>
+                                alt="TikTok Icon"> @dorikontar</a></p>
                 </div>
             </div>
             <div class="image-content">
                 <img src="./assets/profile-picture.png" alt="DORA">
-                <div class="vertical-text">DORI KONTAR </div>
+                <div class="vertical-text">DORI KONTAR</div>
             </div>
         </div>
 
@@ -55,29 +54,21 @@
             </div>
             <div class="about-text">
                 <h1>ABOUT ME</h1>
-                <p class="tagline"> Travel, Food, Beauty, Fashion</p>
-                <p class="description">
-                    Hey - Lovely to have you here! I’m Dora, a Hungary-based
-                    Content Creator who specialises in Beauty, Fashion,
-                    Wellness
-                    & Lifestyle. I have had the pleasure of working with
-                    brands
-                    all across the globe creating high-quality content for
-                    their
-                    marketing uses & I am just getting started. I absolutely
-                    adore my job and I hope you can see that radiate through
-                    my
-                    content. My Portfolio is filled with past work examples
-                    & my
-                    fun personality. Let’s work together!
-                </p>
+                <p class="tagline">Travel, Food, Beauty, Fashion</p>
+                <p class="description">Hey - Lovely to have you here! I’m Dora,
+                    a Hungary-based Content Creator who specialises in Beauty,
+                    Fashion, Wellness & Lifestyle. I have had the pleasure of
+                    working with brands all across the globe creating
+                    high-quality content for their marketing uses & I am just
+                    getting started. I absolutely adore my job and I hope you
+                    can see that radiate through my content. My Portfolio is
+                    filled with past work examples & my fun personality. Let’s
+                    work together!</p>
             </div>
-
         </div>
 
         <div class="container" id="food">
-            <div><img
-                    src="./assets/icons/icons8-beach-52.png" /></div>
+            <div><img src="./assets/icons/icons8-beach-52.png" /></div>
             <div class="video-text" id="travel">
                 <h1>Travel</h1>
             </div>
@@ -85,59 +76,49 @@
 
         <div class="container">
             <div class="image-grid">
-                <div class="photo-card" data-title="Israel"
-                    data-description="Capture the essence of summer."
-                    data-image="image1.jpg">
-                    <img src="./assets/travel/t1.JPG"
-                        alt="Sunscreen with starfish">
-                </div>
-                <div class="photo-card" data-title="Turkey"
-                    data-description="Capture the essence of summer."
-                    data-image="image1.jpg">
-                    <img src="./assets/travel/t2.JPG"
-                        alt="Sunscreen with starfish">
-                </div> <div class="photo-card" data-title="Malta"
-                    data-description="Capture the essence of summer."
-                    data-image="image1.jpg">
-                    <img src="./assets/travel/t4.png">
-                </div>
-                <div class="photo-card" data-title="Jordan"
-                    data-description="Capture the essence of summer."
-                    data-image="image1.jpg">
-                    <img src="./assets/travel/t3.JPG">
-                </div>
+                <div class="photo-card" data-title="Israel"><img
+                        src="./assets/travel/t1.JPG" alt="Israel"
+                        onclick="openModal('./assets/travel/t1.JPG')"></div>
+                <div class="photo-card" data-title="Turkey"><img
+                        src="./assets/travel/t2.JPG"
+                        onclick="openModal('./assets/travel/t2.JPG')"
+                        alt="Turkey"></div>
+                <div class="photo-card" data-title="Malta"><img
+                        src="./assets/travel/t4.png"
+                        onclick="openModal('./assets/travel/t4.png')"
+                        alt="Malta"></div>
+                <div class="photo-card" data-title="Jordan"><img
+                        src="./assets/travel/t3.JPG"
+                        onclick="openModal('./assets/travel/t3.JPG')"
+                        alt="Jordan"></div>
             </div>
             <div class="image-grid">
-                <div class="photo-card" data-title="Italy"
-                    data-description="Capture the essence of summer."
-                    data-image="image1.jpg">
-                    <img src="./assets/travel/t5.JPG"
-                        alt="Sunscreen with starfish">
-                </div>
-                <div class="photo-card" data-title="Egypt"
-                    data-description="Capture the essence of summer."
-                    data-image="image1.jpg">
-                    <img src="./assets/travel/t6.JPG"
-                        alt="Sunscreen with starfish">
-                </div> <div class="photo-card" data-title="India"
-                    data-description="Capture the essence of summer."
-                    data-image="image1.jpg">
-                    <img src="./assets/travel/t7.JPG"
-                        alt="Sunscreen with starfish">
-                </div>
-                <div class="photo-card" data-title="New York"
-                    data-description="Capture the essence of summer."
-                    data-image="image1.jpg">
-                    <img src="./assets/travel/t8.JPG"
-                        alt="Sunscreen with starfish">
-                </div>
-
+                <div class="photo-card" data-title="Italy"><img
+                        src="./assets/travel/t5.JPG"
+                        onclick="openModal('./assets/travel/t5.JPG')"
+                        alt="Italy"></div>
+                <div class="photo-card" data-title="Egypt"><img
+                        src="./assets/travel/t6.JPG"
+                        onclick="openModal('./assets/travel/t6.JPG')"
+                        alt="Egypt"></div>
+                <div class="photo-card" data-title="India"><img
+                        src="./assets/travel/t7.JPG"
+                        onclick="openModal('./assets/travel/t7.JPG')"
+                        alt="India"></div>
+                <div class="photo-card" data-title="New York"><img
+                        src="./assets/travel/t8.JPG"
+                        onclick="openModal('./assets/travel/t8.JPG')"
+                        alt="New York"></div>
             </div>
         </div>
 
+        <div id="imageModal" class="modal-overlay">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="fullImage">
+        </div>
+
         <div class="container" id="photography">
-            <div><img
-                    src="./assets/icons/icons8-pizza-96.png" /></div>
+            <div><img src="./assets/icons/icons8-pizza-96.png" /></div>
             <div class="video-text" id="food&Drinks">
                 <h1>FOOD</h1>
             </div>
@@ -145,54 +126,45 @@
 
         <div class="container">
             <div class="image-grid">
-                <div class="image-item">
-                    <img src="assets/food/f1.JPG" alt="Image 1" />
-                </div>
-                <div class="image-item">
-                    <img src="assets/food/f2.JPG" alt="image 1" />
-                </div>
-                <div class="image-item">
-                    <img src="assets/food/f3.JPG" alt="image 1" />
-                </div>
-                <div class="image-item">
-                    <img src="assets/food/f4.JPG" alt="image 1" />
-                </div>
+                <div class="image-item"><img src="assets/food/f1.JPG"
+                        alt="Food Image 1" /></div>
+                <div class="image-item"><img src="assets/food/f2.JPG"
+                        alt="Food Image 2" /></div>
+                <div class="image-item"><img src="assets/food/f3.JPG"
+                        alt="Food Image 3" /></div>
+                <div class="image-item"><img src="assets/food/f4.JPG"
+                        alt="Food Image 4" /></div>
             </div>
         </div>
 
         <div class="container" id="food">
-            <div><img
-                    src="./assets/icons/icons8-makeup-brush-48.png" /></div>
+            <div><img src="./assets/icons/icons8-makeup-brush-48.png" /></div>
             <div class="video-text">
                 <h1>BEAUTY</h1>
             </div>
         </div>
+
         <div class="container">
             <div class="image-grid">
-                <div class="image-item">
-                    <img src="assets/beauty/f1.JPG" alt="Image 1" />
-                </div>
-                <div class="image-item">
-                    <img src="assets/beauty/f2.JPG" alt="image 2" />
-                </div>
-                <div class="image-item">
-                    <img src="assets/beauty/f3.JPG" alt="image 3" />
-                </div>
-                <div class="image-item">
-                    <img src="assets/beauty/f4.JPG" alt="image 4" />
-                </div>
+                <div class="image-item"><img src="assets/beauty/f1.JPG"
+                        alt="Beauty Image 1" /></div>
+                <div class="image-item"><img src="assets/beauty/f2.JPG"
+                        alt="Beauty Image 2" /></div>
+                <div class="image-item"><img src="assets/beauty/f3.JPG"
+                        alt="Beauty Image 3" /></div>
+                <div class="image-item"><img src="assets/beauty/f4.JPG"
+                        alt="Beauty Image 4" /></div>
             </div>
         </div>
 
         <div class="container" id="photography">
-            <div><img
-                    src="./assets/icons/icons8-country-48.png" /></div>
-            <div class="video-text" id="food&Drinks">
+            <div><img src="./assets/icons/icons8-country-48.png" /></div>
+            <div class="video-text" id="visited-countries">
                 <h1>Countries I have been to ...</h1>
             </div>
         </div>
-        <div class="flag-container">
 
+        <div class="flag-container">
             <h2 class="section-label">Americas (AMR)</h2>
             <div class="flag-section">
                 <img src="https://flagcdn.com/w320/us.png" alt="United States">
@@ -227,7 +199,6 @@
                 <img src="https://flagcdn.com/w320/ma.png" alt="Morocco">
                 <img src="https://flagcdn.com/w320/eg.png" alt="Egypt">
             </div>
-
         </div>
 
         <footer class="footer">
@@ -237,7 +208,6 @@
         </footer>
 
         <script src="main.js"></script>
-
     </body>
 
 </html>
